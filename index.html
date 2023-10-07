@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        nav ul li a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>school system</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form action="">
+        <label form="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname"><br>
+
+        <label form="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob"><br>
+
+        <label fomr="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label form="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+
+        <label form="phonenumber">Phone Number:</label><br>
+        <input type="tel" id="phonenumber" name="phonenumber"><br>
+
+        <label form="grade">Grade:</label><br>
+        <input type="number" id="grade" name="grade" min="1" max="12"><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <table id="studentForm" border="1">
+        <tr>
+            <th>Full Name</th>
+            <th>Date of Birth</th>
+            <th>Gender</th>
+            <th>Phone Number</th>
+            <th>Grade</th>
+        </tr>
+    </table>
+<script src="app.js"></script>
+</body>
+</html>
