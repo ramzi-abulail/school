@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <nav class="navbar">
+   
+    <div class="logo">SCHOLL SYSTEM</div>
+
+    <ul class="nav-links">
+
+     
+
+    
+      <div class="menu">
+
+        <li><a href="/">Home</a></li>
+        <li><a href="/">About</a></li>
+        <li><a href="/">Contact</a></li>
+      </div>
+    </ul>
+  </nav>
+  <h1>Student Information Form</h1>
+  <div class="cont">
+
+    <form class="student-form">
+      <label for="fullname">Full name:</label>
+      <input type="text" name="full_name" id="fullname" required value="name">
+  
+      <label for="date_of_birth">Date of birth:</label>
+      <input type="date" name="date_of_birth" id="date_of_birth" value="date" required>
+  
+      <label for="gender">Gender:</label>
+      <select name="gender" id="gender" required>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+  
+      <label for="phone_number" >Phone number:</label>
+      <input type="tel" name="phone_number" id="phone_number" value="number" required>
+  
+      <label for="grade">Grade:</label>
+      <input type="number" name="grade" id="grade" value="grade" required>
+  
+      <button class="submit"  id="sub">Submit</button>
+    </form>
+
+
+
+    <div>
+    <table id="student-table">
+        <thead>
+            <tr>
+                <th>Full Name</th>
+                <th>Date of Birth</th>
+                <th>Gender</th>
+                <th>Phone Number</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody id="tables">
+        </tbody>
+    </table>
+    <button id="generatecards">Generate Cards</button>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+
+</html>
